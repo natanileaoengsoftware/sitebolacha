@@ -1,0 +1,50 @@
+.bg-produtos2{
+  background:var(--cor-2);
+  width: 100%;
+  height: auto;
+  display: flex;
+flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  z-index: 1;
+  margin-top: 5px;
+  position: relative;
+}
+.bg-produtos2 h1{
+  font-family: var(--titulo);
+  font-size: 2rem;
+  text-align: center;
+  width: 600px;
+  margin-top: 80px;
+}
+.produtos2 ul{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+    justify-content:center;
+    align-items: center; 
+    width: 800px;
+    font-family: var(--titulo);
+    font-size: 1.5rem;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.botao2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.bg-produtos2::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  top: calc(100% - 20px);
+  z-index: 20;
+  background-image: url('/img/decoracao\ lilas.png');
+  background-repeat: no-repeat;
+}

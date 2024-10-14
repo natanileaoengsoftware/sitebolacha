@@ -1,0 +1,108 @@
+.bg-encomendas{
+ background: var(--cor-0);
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+align-self: center;
+ width: 100%;
+ height: auto;
+ position: relative;
+}
+.bg-encomendas::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  top: calc(100% - 20px);
+  z-index: 20;
+  background-image: url('/img/decoracao-rosa.png');
+  background-repeat: no-repeat;
+}
+.bg-encomendas h1{
+display: flex;
+justify-content: center;
+align-self: center;
+margin-top: 60px;
+text-align: center;
+font-family: var(--titulo);
+color: var(--cor-4);
+font-size: 2.7rem;
+}
+.encomendas-info{
+  display: flex;
+flex-direction: row; 
+justify-content: center;
+align-items: center;
+width: 100%;
+text-align: justify;
+margin-top: 80px;
+}
+.parag-encomendas{
+  font-family: var(--texto-regular);
+color: var(--cor-4);
+width: 700px;
+font-size: 1.3rem;
+
+margin-bottom: 40px;
+margin-right: 60px;
+
+}
+.encomendas-img{
+  filter: drop-shadow(2px 2px 2px var(--cor-4));
+}
+.bg-embalagens{
+  background: var(--cor-3);  
+  display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;  
+ width: 100%;
+ height: auto;
+ position: relative;
+}
+.bg-embalagens::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  top: calc(100% - 20px);
+  z-index: 20;
+  background-image: url('/img/decoracao\ verde.png');
+  background-repeat: no-repeat;
+}
+.info-embalagens{
+  display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center; 
+ width: 1000px;
+}
+.bg-embalagens h1{
+  font-family: var(--titulo);
+  font-size: 3rem;
+  color: var(--cor-4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.parag-embalagens{
+font-family: var(--texto-regular);
+color: var(--cor-4);
+font-size: 1.3rem;
+text-align: justify;
+margin-right: 60px;
+}
+.img-embalagens{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-left: 50px;
+}
+.img-embalagens img{
+  width: 900px;
+ height: 240px;
+ filter: drop-shadow(4px 4px 5px var(--cor-4));
+}

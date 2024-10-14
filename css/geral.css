@@ -1,0 +1,44 @@
+body, h1, p, section, ul{
+  margin: 0;
+  padding: 0;
+}
+html,body {
+  margin: 0px;
+scroll-behavior: smooth;
+  width: 100%;
+  overflow-x: hidden;
+
+}
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+@font-face {
+  font-family: 'openSans-Regular';
+  src: url('/font/OpenSans-Regular.ttf') format('opentype');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'openSans-semibold';
+  src: url('/font/OpenSans-Semibold.ttf') format('opentype');
+  font-weight: 600;
+}
+:root{
+  --titulo:"Rochester";
+  --texto-regular:"openSans-Regular";
+  --texto-semibold:"openSans-semibold";
+  --cor-0:#FDE4EA;
+  --cor-1:#F2ADC2;
+  --cor-2:#F4D8FB;
+  --cor-3:#AEDFDC;
+  --cor-4:#57353F;
+}

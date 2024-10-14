@@ -1,0 +1,331 @@
+nav{
+  background:var(--cor-1);
+  position: relative;
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  z-index: 3;
+margin: 0;
+position: relative;
+}
+nav::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  top: calc(100% - 2px);
+  z-index: 4;
+  background-image: url('/img/decoracao-rosa-escuro.png');
+  background-repeat: no-repeat;
+}
+.topo img{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.topo{
+  display: flex;
+  flex-direction: row;
+justify-content: space-around;
+align-self: center;
+width: 100%;
+}
+.menus-bg{
+  display: flex; 
+  justify-content: center; 
+  flex-direction: row;
+  align-items: center; 
+  height: auto;
+}
+.menus1 {
+  display: flex;
+gap: 40px;
+}
+.menus1 a{
+font-family: var(--titulo);
+color: var(--cor-4);
+font-size: 1.5rem;
+}
+.menus1 a:hover{
+  color: var(--cor-0);
+  transition: 0.35s;
+  transform: scale(1.2);
+  display: inline-block;
+}
+.botao{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.botao button{
+  background-color: var(--cor-3);
+  width: 180px;
+  height: 35px;
+  border-radius: 5px;
+  border: 2px var(--cor-5);
+  box-shadow: 1px 1px 3px 0.1px var(--cor-4);
+  font-family: var(--titulo);
+  font-size: 1.2rem;
+ text-align: center;
+}
+.botao:hover button{
+  transition: 0.35s;
+  background: var(--cor-2);
+  transform: scale(1.1);
+}
+.bg-inicio{
+  background:var(--cor-0);
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 2;
+  margin-top: 5px;
+  position: relative;
+}
+.bg-inicio::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100px;
+ top: calc(100% - 8px);
+  z-index: 1;
+  background-image: url('/img/decoracao-rosa.png');
+  background-repeat: no-repeat;
+}
+.inicio-titulo h1{
+  font-family: var(--titulo);
+  font-size: 5rem;
+  text-align: center;
+  width: 600px;
+  line-height: 1;
+  color: var(--cor-4);
+}
+.inicio-titulo p{
+  font-size: 1.4rem;
+  text-align: center; 
+ margin-top: 10px;
+  color: var(--cor-4);
+  font-family: var(--texto-regular);
+}
+.xicara img{
+  width: 300px;
+  height: 200px;
+}
+
+.bg-produtos{
+  background:var(--cor-2);
+  width: 100%;
+  height: auto;
+  display: flex;
+flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  z-index: 1;
+  margin-top: 5px;
+  position: relative;
+}
+.bg-produtos::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  top: calc(100% - 10px);
+  z-index: 20;
+  background-image: url('/img/decoracao\ lilas.png');
+  background-repeat: no-repeat;
+}
+.bg-produtos h1{
+  font-family: var(--titulo);
+  color: var(--cor-4);
+  font-size: 2rem;
+  text-align: center;
+  width: 600px;
+  margin-top: 80px;
+}
+.produtos ul{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+    justify-content:center;
+    align-items: center; 
+    width: 900px;
+    font-family: var(--titulo);
+    font-size: 2rem;
+    gap: 30px;
+    margin-top: 40px;
+}
+.produtos li{
+  flex: 1 0 20%;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #F2ADC2 0%, #F4D8FB 50%, #F2ADC2 100%);
+  border-radius: 50%;
+  width: 340px;
+  height:200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 1px 1px 3px 0.1px var(--cor-4);
+}
+.produtos li a{
+  color: var(--cor-4);
+}
+.produtos li:hover{
+  transform: scale(1.1);
+transition: all 0.5s;
+cursor: pointer;
+}
+.botao2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+.botao2 button{
+  background-color: var(--cor-3);
+  width: 180px;
+  height: 35px;
+  border-radius: 5px;
+  border: 2px var(--cor-5);
+  box-shadow: 1px 1px 3px 0.1px var(--cor-4);
+  font-family: var(--titulo);
+  font-size: 1.2rem;
+ text-align: center;
+}
+.botao2:hover button{
+  transition: 0.35s;
+  background: var(--cor-2);
+  transform: scale(1.1);
+}
+
+.cta-content{
+  background: var(--cor-3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.cta-content::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  top: calc(100% - 20px);
+  z-index: 20;
+  background-image: url('/img/decoracao\ verde.png');
+  background-repeat: no-repeat;
+}
+.cta-content h2{
+  font-family: var(--titulo);
+  margin-top: 60px;
+  font-size: 2.4rem;
+  color: var(--cor-4);
+}
+.cta-content p{
+  width: 1000px;
+  text-align: center;
+  font-size: 1.4rem;
+  font-family: var(--texto-regular);
+  color: var(--cor-4);
+
+}
+.cta-content strong{
+  font-family: var(--texto-semibold);
+  color: var(--cor-4);
+  font-size: 1.4rem;
+  -webkit-text-stroke-color:var(--cor-4);
+  -webkit-text-stroke-width: 2px;
+}
+
+.botao3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.botao3 button{
+  background-color: var(--cor-2);
+  width: 180px;
+  height: 35px;
+  border-radius: 5px;
+  border: 2px var(--cor-5);
+  box-shadow: 1px 1px 3px 0.1px var(--cor-4);
+  font-family: var(--titulo);
+  font-size: 1.2rem;
+ text-align: center;
+}
+.botao3:hover button{
+  transition: 0.35s;
+  background: var(--cor-0);
+  transform: scale(1.1);
+}
+.footer-bg{
+  background: var(--cor-4);
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+  width: 100%;
+  height: auto;
+}
+.footer-logo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  }
+  .footer-logo:hover{
+    transition: 0.35s;
+    transform: scale(1.2);
+  }
+
+.menus2 {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 60px;
+margin-bottom: 30px;
+}
+.menus2 li a{
+  color: var(--cor-0);
+  font-family: var(--titulo);
+  font-size: 1.4rem;
+}
+.menus2 a:hover{
+  color: var(--cor-2);
+  transition: 0.35s;
+  transform: scale(1.2);
+  display: inline-block;
+}
+.redes{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+align-items: center;
+margin-top: 30px;
+gap: 10px;
+}
+.insta{
+background-color: transparent;
+border: none;
+}
+.insta:hover{
+transition: 0.35s;
+transform: scale(1.2);
+}
+.copy{
+  background-color: var(--cor-0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cor-4);
+  font-family: var(--texto-regular);
+}
